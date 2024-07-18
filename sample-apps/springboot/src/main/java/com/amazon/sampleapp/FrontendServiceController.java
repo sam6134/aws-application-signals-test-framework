@@ -176,7 +176,7 @@ public class FrontendServiceController {
               System.getenv().get("RDS_MYSQL_CLUSTER_USERNAME"),
               System.getenv().get("RDS_MYSQL_CLUSTER_PASSWORD"));
       Statement statement = connection.createStatement();
-      statement.executeQuery("SELECT * FROM tables LIMIT 1;");
+      statement.executeQuery("CREATE DATABASE warehouse;");
     } catch (SQLException e) {
       logger.error("Could not complete SQL request:{}", e.getMessage());
       throw new RuntimeException(e);

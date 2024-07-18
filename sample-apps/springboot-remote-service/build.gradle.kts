@@ -37,7 +37,7 @@ dependencies {
 
 jib {
   to {
-    image = "<ECR_IMAGE_LINK>:<TAG>"
+    image = "485723204495.dkr.ecr.us-east-1.amazonaws.com/appsignals-java-springboot-remote-service:latest"
   }
   container {
     mainClass = "com.amazon.sampleapp.RemoteService"

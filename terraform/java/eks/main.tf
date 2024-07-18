@@ -113,7 +113,7 @@ resource "kubernetes_deployment" "sample_app_deployment" {
           }
           env {
             name = "RDS_MYSQL_CLUSTER_CONNECTION_URL"
-            value = "jdbc:mysql://${var.rds_mysql_cluster_endpoint}:3306/information_schema"
+            value = "jdbc:mysql://${var.rds_mysql_cluster_endpoint}:3306"
           }
           env {
             name = "RDS_MYSQL_CLUSTER_USERNAME"
